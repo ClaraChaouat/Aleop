@@ -1,0 +1,24 @@
+@import "../styles/settings.scss";
+
+.footerHorizontalBar {
+  border: 1px solid $secondaryColor;
+  max-width: 1198px;
+  margin: auto;
+  margin-bottom: 52px;
+}
+
+.footerContainer {
+  text-align: start;
+  font-family: $primaryFontFamily;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.footerDiscountTerms {
+  margin-top: 20px;
+}
+
+.footerPaymentConditions, .footerDiscountTerms {
+  padding-left: 10px;
+}

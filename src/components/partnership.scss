@@ -1,0 +1,74 @@
+@import "../styles/settings.scss";
+@import "../styles/responsive.scss";
+
+.partnershipContainer {
+  position: relative;
+  z-index: 10;
+  min-height: 770px;
+  margin-bottom: 122px;
+}
+
+.partnershipImageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 770px;
+}
+
+.partnershipBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.partnershipDescription {
+  position: relative;
+  display: flex;
+  gap: 43.5px;
+  padding: 46px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnershipDescriptionTitle {
+  font-family: $secondaryFontFamily;
+  font-weight: 700;
+  font-size: 30px;
+  color: $primaryColor;
+  line-height: 0.73;
+}
+
+.partnershipDescriptionContainer {
+  border-left: 1px solid $primaryColor;
+  text-align: start;
+  padding-left: 30px;
+  max-width: 648px;
+}
+
+.partnershipDescriptionText {
+  font-family: $secondaryFontFamily;
+  color: $primaryColor;
+  font-weight: 450;
+  font-size: 23.5px;
+  line-height: 1.23;
+  margin-top: 22px;
+}
+
+@media #{$medium-screen} {
+  .partnershipDescription {
+    padding: 46px 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partnershipDescriptionContainer {
+    text-align: center;
+    max-width: fit-content;
+    border-left: none;
+  }
+}
+
+

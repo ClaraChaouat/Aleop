@@ -1,0 +1,30 @@
+@import "../styles/mixins.scss";
+@import "../styles/settings.scss";
+
+.productsCaroussel {
+  position: relative;
+}
+
+.productsCarousselTitle {
+  text-align: start;
+  padding-left: 61px;
+  padding-bottom: 20px;
+  @include subtitleStyle;
+}
+.ProductCarousselContainer {
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+  gap: 15px;
+  padding-left: 61px;
+  margin-bottom: 73px;
+  padding-bottom: 10px;
+}
+
+.productsCarousselBtn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 43%;
+  right: 8px;
+}

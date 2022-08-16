@@ -1,0 +1,24 @@
+.caroussel {
+  position: relative;
+}
+
+.carousselContainer {
+  display: flex;
+  position: relative;
+  gap: 19px;
+  padding-left: 59px;
+  width: 100vw;
+  overflow-x: scroll;
+  margin-bottom: 76px;
+  min-height: 236px;
+  padding-bottom: 10px;
+}
+
+.carousselBtn {
+  position: absolute;
+  top: 90px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+}

@@ -1,0 +1,52 @@
+@import "../styles/settings.scss";
+@import "../styles/responsive.scss";
+@import "../styles/mixins.scss";
+
+.carousselDealsOffers {
+  font-family: $primaryFontFamily;
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 1.27;
+  padding-bottom: 13px;
+
+  &.text {
+    font-size: 37px;
+    line-height: 1.05;
+    padding-top: 29px;
+    padding-bottom: 34px;
+
+    &.extraPaddings {
+      padding-right: 217px;
+    }
+  }
+}
+
+.carousselDealsContainer {
+  border: 2px solid $secondaryColor;
+  border-radius: 30px;
+  min-width: 405px;
+  min-height: 236px;
+  text-align: start;
+  padding-left: 30px;
+}
+
+.carousselDealsConditions {
+  @include subtitleStyle;
+  line-height: 1.28;
+
+  &.extraPaddings {
+    max-width: 230px;
+  }
+}
+
+@media #{$extraLarge-screen} {
+  .carousselDealsContainer {
+    padding-right: 10px;
+  }
+
+  .carousselDealsOffers {
+    &.text {
+      padding-bottom: 70px;
+    }
+  }
+}

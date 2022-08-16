@@ -1,0 +1,25 @@
+@import "../styles/settings.scss";
+
+.productsContainer {
+  background-color: $ternaryColor;
+  border-radius: 14px;
+}
+
+.productsImageContainer {
+  height: auto;
+}
+
+.productsImages {
+  padding: 26px 37px 10px;
+}
+.productsDescription {
+  font-family: $primaryFontFamily;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 1.25;
+  padding-bottom: 22px;
+
+  &.extraPadding {
+    padding-top: 25px;
+  }
+}

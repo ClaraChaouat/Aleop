@@ -1,0 +1,90 @@
+@import "../styles/settings.scss";
+@import "../styles/mixins.scss";
+
+.headerContainer {
+  position: relative;
+}
+
+.headerContainerBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center -50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 23%,
+      #ffffff 100%
+    );
+  }
+}
+
+.headerNavBar {
+  position: relative;
+
+  a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  p,
+  img {
+    margin-top: 31px;
+  }
+
+  p {
+    margin-left: 11px;
+    font-family: $primaryFontFamily;
+    font-weight: 700;
+    font-size: 15px;
+    color: $secondaryColor;
+  }
+
+  img {
+    margin-left: 71px;
+    max-width: 100%;
+  }
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  position: relative;
+  padding: 385px 0 1px 61px;
+}
+
+.headerSubtitle {
+  @include subtitleStyle;
+  margin-top: 31px;
+  margin-bottom: 13.5px;
+}
+
+.headerDescription {
+  max-width: 622px;
+  font-family: $primaryFontFamily;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.headerAdvantages {
+  @include subtitleStyle;
+  margin-top: 71px;
+}

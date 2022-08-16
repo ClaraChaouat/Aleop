@@ -1,0 +1,9 @@
+@import "../styles/settings.scss";
+
+@mixin subtitleStyle {
+  font-family: $primaryFontFamily;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 0.88;
+  color: $secondaryColor;
+}

@@ -1,0 +1,59 @@
+@import "../styles/settings.scss";
+@import "./mixins.scss";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  z-index: 10;
+}
+
+@font-face {
+  font-family: "CircularMedium";
+  src: local("CircularMedium"),
+    url("../fonts/circular-std-medium-500.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "CircularBook";
+  src: local("CircularBook"),
+    url("../fonts/circular-std-book.ttf") format("truetype");
+  font-weight: 400;
+}
