@@ -1,4 +1,5 @@
 import "./productscaroussel.scss";
+import { useRef } from "react";
 import { Products } from "./Products";
 import proteinPowder from "../images/protein-powder.png";
 import proteinBar from "../images/protein-bar.png";
@@ -12,12 +13,25 @@ import muesliPorridge from "../images/muesli-porridge.png";
 import sliderArrowWhite from "../images/slider-icon-arrow-left-white.svg";
 
 export function ProductsCaroussel() {
+
+  const refContainer = useRef();
+  function handleOnClick() {
+    
+    refContainer.current.scroll({
+      left: refContainer.current.scrollLeft + 300,
+      behavior: "smooth",
+    });
+
+  }
+
+
+
   return (
     <div className="productsCaroussel">
       <div className="productsCarousselTitle">
         <p>Les produits foodspring</p>
       </div>
-      <div className="ProductCarousselContainer">
+      <div className="ProductCarousselContainer" ref={refContainer} >
         <Products description="Protéines en poudre" img={proteinPowder} />
         <Products description="Barres" img={proteinBar} />
         <Products description="En-cas" img={snacks} />
@@ -29,7 +43,7 @@ export function ProductsCaroussel() {
         <Products description="Muesli & Porridge" img={muesliPorridge} style />
       </div>
 
-      <button className="productsCarousselBtn">
+      <button className="productsCarousselBtn" onClick={handleOnClick}>
         <img src={sliderArrowWhite} alt="Arrow to scroll caroussel"></img>
       </button>
     </div>
