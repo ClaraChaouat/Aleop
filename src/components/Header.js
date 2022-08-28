@@ -14,7 +14,7 @@ export function Header() {
         ></img>
       </div>
       <div className="headerNavBar">
-        <a href="#">
+        <a href="!#">
           <img src={returnArrow} alt="Return to previous page"></img>
           <p>Retour</p>
         </a>
